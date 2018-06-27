@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a17574b0-6efb-486e-b8be-36fcdf53f3e1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/view/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/_config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/routeur.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/routeur.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/home.php" afterDir="false" />
-    </list>
+    <list default="true" id="a17574b0-6efb-486e-b8be-36fcdf53f3e1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +208,7 @@
       <workItem from="1529587159931" duration="622000" />
       <workItem from="1529903056808" duration="545000" />
       <workItem from="1529914707333" duration="9118000" />
-      <workItem from="1530098537429" duration="7424000" />
+      <workItem from="1530098537429" duration="7724000" />
     </task>
     <task id="LOCAL-00001" summary="ajout du.htaccess">
       <created>1529482490745</created>
@@ -234,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23328000" />
+    <option name="totallyTimeSpent" value="23628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="2039" height="1129" extended-state="6" />
