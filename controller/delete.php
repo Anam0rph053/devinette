@@ -3,8 +3,7 @@ include_once('_config.php');
 
 $id = $_GET['id'];
 
-/*** accès au model ***/
-
+/*** accès au model**/
 $bdd = new PDO("mysql:host=localhost;dbname=test;charset=utf8", "root", "root");
 
 $query = "DELETE FROM devinette WHERE id = :id";
@@ -16,3 +15,4 @@ header("Location: index.php");
 
 exit;
 ;?>
+

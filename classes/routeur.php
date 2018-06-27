@@ -1,14 +1,14 @@
 <?php
 
-/**
- * Class Routeur
- *class routeur
- * creer routes et trouver controller
- */
+
 class Routeur
 {
     private $request;
-    private $routes = ["home" => "home", "contact"=> "contact"];
+    private $routes = [
+
+                        "home"    =>["controller" => 'Home', "method" => 'showHome'],
+                        "contact" =>["controller" => 'Home', "method" => 'showContact']
+                        ];
 
     public function __construct($request)
     {
@@ -19,10 +19,15 @@ class Routeur
     {
         $request = $this->request;
 
-        if(key_exists($request->routes))
+        if(array_key_exists($request,$this->routes))
         {
-            $controller = $this->routes[$request];
-            include(CONTROLLER. $controller.'php');
+            $controller = $this->routes[$request]['controller'];
+            $method = $this->routes[$request]['method'];
+
+            $currentController = new $controller();
+            $currentController->$method();
+
+
         } else{
             echo '404';
         }

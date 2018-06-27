@@ -11,8 +11,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=test;charset=utf8", "root", "root");
 
 if(!isset($values['id']))
 {
-    $query = "INSERT INTO devinette (id, name, question, answer, created_at) 
-          VALUES (NULL, :name, :question, :answer, NULL);";
+    $query = "INSERT INTO devinette (id, name, question, answer, created_at)VALUES (NULL, :name, :question, :answer, NULL)";
 
 } else {
     $query = "UPDATE devinette SET name = :name, question = :question, answer = :answer WHERE id = :id";

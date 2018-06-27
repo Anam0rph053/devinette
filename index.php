@@ -1,9 +1,18 @@
 <?php
 include_once('_config.php');
 
-$request = $_GET['r']; // index.php?r....
+MyAutoload::start();
 
-include_once (CLASSES.'routeur.php');
+
+if(isset($_GET['r'])){
+
+    $request = $_GET['r']; // index.php?r....
+
+} else {
+
+  $request = 'home';
+}
+
 
 $routeur = new Routeur($request);
 $routeur->renderController();
