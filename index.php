@@ -3,7 +3,6 @@ include_once('_config.php');
 
 MyAutoload::start();
 
-
 if(isset($_GET['r'])){
 
     $request = $_GET['r']; // index.php?r....
@@ -13,6 +12,6 @@ if(isset($_GET['r'])){
   $request = 'home';
 }
 
-
 $routeur = new Routeur($request);
 $routeur->renderController();
+
