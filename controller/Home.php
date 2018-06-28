@@ -35,9 +35,10 @@ class Home {
 
     public function editDev($params)
     {
+        extract ($params);
 
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
+        if (isset($id)) {
+
 
             $manager = new DevinetteManager();
             $devinette = $manager->find($id);
@@ -55,7 +56,6 @@ class Home {
     {
         $values = $_POST['values'];
 
-
         $manager = new DevinetteManager();
         $manager->create($values);
 
@@ -63,6 +63,17 @@ class Home {
         $myView->redirect('home');
 
 
+    }
+
+    public function delDev ($params)
+    {
+        extract ($params);
+
+        $manager = new DevinetteManager();
+        $manager->delete($id);
+
+        $myView = new View();
+        $myView->redirect('home');
     }
 
 

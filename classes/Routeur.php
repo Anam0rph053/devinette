@@ -11,6 +11,7 @@ class Routeur
                         "create-devinette"       =>["controller" => 'Home', "method" => 'editDev'],
                         "ajout"                  =>["controller" => 'Home', "method" => 'addDev'],
                         "delete"                 =>["controller" => 'Home', "method" => 'delDev'],
+                        "modification"           =>["controller" => 'Home', "method" => 'editDev'],
 
                         ];
 
@@ -32,11 +33,15 @@ class Routeur
         // extract GET params
         $elements = explode('/', $this->request);
         unset($elements[0]);
+
         for($i = 1; $i<count($elements); $i++)
         {
             $params[$elements[$i]] = $elements[$i+1];  //delete/id/4 => id/4
             $i++;
         }
+
+        if(!isset($params)) $params = null ;
+
         // extract POST params
         if($_POST)
         {
@@ -45,11 +50,12 @@ class Routeur
                 $params[$key] = $val;
             }
         }
+
+
         return $params;
 
 
     }
-
 
     public function renderController()
     {

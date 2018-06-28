@@ -70,7 +70,7 @@ class DevinetteManager
 
         if(!isset($values['id']))
         {
-            $query = "INSERT INTO devinette (id, name, question, answer, created_at)VALUES (NULL, :name, :question, :answer, NULL)";
+            $query = "INSERT INTO devinette (id, name, question, answer, created_at)VALUES (NULL, :name, :question, :answer, NOW())";
 
         } else {
             $query = "UPDATE devinette SET name = :name, question = :question, answer = :answer WHERE id = :id";
@@ -89,6 +89,7 @@ class DevinetteManager
     public function delete($id)
     {
         $bdd = $this->bdd;
+
         $query = "DELETE FROM devinette WHERE id = :id";
         $req = $bdd->prepare($query);
         $req->bindValue(':id', $id, PDO::PARAM_INT);
